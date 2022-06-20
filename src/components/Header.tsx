@@ -13,12 +13,12 @@ export function Header() {
 
     return (
        <div className="flex fixed w-full h-[68px] z-50 bg-gradient-to-b from-black">
-        <div className="flex flex-row w-full items-center px-10">
+        <div className="flex flex-row w-full items-center px-14">
             <div className="cursor-pointer">
-             <img className="w-48" src={Logo}/>
+             <img className="w-40" src={Logo}/>
             </div> {/*Logo*/}
 
-            <ul className={`hidden md:flex ml-8 transition-all duration-500`}>
+            <ul className={`hidden md:flex ml-11 transition-all duration-500`}>
                 {
                     navLinks.map((link)=>(
                         <li key={link.name} className='whitespace-nowrap text-sm font-normal font-Roboto mr-5 first:font-bold'>
@@ -45,14 +45,14 @@ export function Header() {
                 }
             </ul> {/*Menu Links Mobile*/}
 
-            <div className="flex w-full justify-end text-lg font-normal font-Roboto mr-12">
-                <div className="mr-5">
+            <div className="flex w-full justify-end text-xl font-normal font-Roboto mr-9">
+                <div className="mr-5 cursor-pointer">
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <div className="mr-5 text-sm pt-1 hidden md:flex">
+                <div className="mr-5 text-sm pt-1 hidden md:flex cursor-pointer">
                     Infantil
                 </div>
-                <div className="mr-5">
+                <div className="mr-5 cursor-pointer">
                     <i className="fa-solid fa-bell"></i>
                 </div>
                 <div className="w-7 h-7 flex rounded bg-green-500 cursor-pointer">
